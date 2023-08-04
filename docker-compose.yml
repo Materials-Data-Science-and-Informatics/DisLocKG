@@ -1,0 +1,12 @@
+version: '3'
+services:
+   virtuoso:
+      image: openlink/virtuoso-opensource-7
+      environment:
+        DBA_PASSWORD: "1234567890"
+        SPARQL_UPDATE: "false"
+        DEFAULT_GRAPH: "http://localhost:8899/dislockg"
+      volumes:
+        - ./data-files:/data
+      ports:
+        - "8899:8890"
