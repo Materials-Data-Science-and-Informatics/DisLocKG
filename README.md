@@ -29,16 +29,17 @@ docker run --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE=fal
 ```
 4. Wait for the Virtuoso instance to start up (you can check the logs with docker-compose logs virtuoso)
 
-## Uploading the knowledge graph into the triples store
-1. Due to a large file, we need to download a unified graph of the relaxation calculations in https://fz-juelich.sciebo.de/s/fRUZFjvhMci2giu to upload the knowledge graph.
-2. Then, on your browser, go to `localhost:8899/conductor`. You will see the page as seen in the figure below
+## Uploading the knowledge graph into the triplestore
+1.
+2. Due to a large file, we need to download a unified graph of the relaxation calculations in https://fz-juelich.sciebo.de/s/fRUZFjvhMci2giu to upload the knowledge graph.
+3. Then, on your browser, go to `localhost:8899/conductor`. You will see the page as seen in the figure below
 ![menu-conductor](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/ee0c7f66-82ce-46d8-9544-01ee2f612d0e)
-3. On the upper left, there is a login box, please log in with a credential: `Account: dba` and `Password: 1234567890`
+4. On the upper left, there is a login box, please log in with a credential: `Account: dba` and `Password: 1234567890`
 ![fig1-dislockg](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/2d34cf0c-a2b7-488c-8d92-e32d82fe2e37)
-4. If you are successfully login, please
-  (1). go to the menu `Linked Data`.
+5. If you are successfully login, please
+  (1). on the menu, go to the `Linked Data`.
   (2). Then choose `Quad Store Upload`.
-  (3). Choose the downloaded knowledge graph file, 
+  (3). Choose the downloaded knowledge graph file. 
    (4). Type the name of graph IRI, `http:localhost:8890?/DisLocKG`, and 
    (5). Hit the upload.
 NOTE: It may take time, approx. 3-5 minutes to upload.
