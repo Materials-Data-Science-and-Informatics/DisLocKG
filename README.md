@@ -12,7 +12,7 @@
 Dislocation Knowledge Graph (DisLocKG) is a knowledge graph that contains data about a crystalline material’s dislocation organized in a semantic network. In addition, DisLocKG stores the provenance information related to the data, particularly the creator data, software, and software version used to generate the data. In total, we have generated a number of ∼2.2M triples that are stored as RDF files.
 ![Fig16.pdf](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/files/12272399/Fig16.pdf)
 
-## Repository Description
+## Repository description
 * You may find raw data that DisLocKG maps with the help the Dislocation Ontology (DISO) in [here](/raw-data/modelib-microstructure/Copper/h5/). All data files are in the HDF5 format (.h5).
 * To generate the RDF graph from the given [raw data](raw-data), we use the [RDFLib](https://github.com/RDFLib/rdflib) python library.`
 * To generate a dislocation simulation graph, the script is in [here](/script/modelib/) and execute it with `python map_data.py`
