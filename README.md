@@ -73,3 +73,6 @@ NOTE: It may take time, approx. 3-5 minutes to upload.
 ## Contact
 You may contact the author of DISO via a.ihsan@fz-juelich.de
 
+## License
+The code is licensed under the [MIT license](./LICENSE).
+
