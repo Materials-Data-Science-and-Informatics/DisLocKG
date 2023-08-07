@@ -51,15 +51,7 @@ docker run  -d --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE
 
 ## Uploading the knowledge graph into the triplestore 
 
-1. Due to large files in the repository, you should install `git-lfs` in your system. If you already installed ``git-lfs`, in the DisLocKG repository you can download large files by first
-   ```
-   git lfs install
-   ```
-   and then pull them
-   ```
-   git lfs pull
-   ```
-   Note: Fail to do `git lfs install` and `git lfs pull` will fail the entire uploading process. 
+1. Due to large files in the repository, please download the knowledge graph in [here](https://media.githubusercontent.com/media/Materials-Data-Science-and-Informatics/DisLocKG/main/DisLocKG-01.08.2023.ttl).
 2. While the Virtuoso container is running (in the background), go to `localhost:8899/conductor` on your browser. You will see the page as seen in the figure below:
 
 ![menu-conductor](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/ee0c7f66-82ce-46d8-9544-01ee2f612d0e)
