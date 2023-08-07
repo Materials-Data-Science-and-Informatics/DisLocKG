@@ -51,7 +51,7 @@ docker run --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE=fal
 ### Uploading the knowledge graph into the triplestore 
 
 1. Due to a large file, we need to download a unified graph of the relaxation calculations in https://fz-juelich.sciebo.de/s/fRUZFjvhMci2giu to upload the knowledge graph.
-2. While the Virtuoso container running, on your browser, go to `localhost:8899/conductor`. You will see the page as seen in the figure below
+2. While the Virtuoso container running, go to `localhost:8899/conductor` on your browser. You will see the page as seen in the figure below
 ![menu-conductor](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/ee0c7f66-82ce-46d8-9544-01ee2f612d0e)
 3. On the upper left, there is a login box, please log in with a credential: `Account: dba` and `Password: 1234567890`
 ![fig1-dislockg](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/2d34cf0c-a2b7-488c-8d92-e32d82fe2e37)
