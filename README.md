@@ -5,7 +5,8 @@
   2. [Repository Description](#repository-description)
   4. [Running a SPARQL endpoint](#running-a-sparql-endpoint)
   5. [Contact](#contact)
-  6. [License](#license)
+  6. [Acknowledgements](#acknowledgements)
+  7. [License](#license)
  
 
 ## About DisLocKG
@@ -76,6 +77,10 @@ NOTE: It may take time, approx. 3-5 minutes, to upload the file.
 ## Contact
 You may contact the author of DisLocKG via a.ihsan@fz-juelich.de
 
+## Acknowledgements
+* European Research Council through the ERC Grant Agreement No. 759419 MuDiLingo (”A Multiscale Dislocation Language for Data-Driven Materials Science”)
+* Helmholtz Metadata Collaboration (HMC) within the Hub Information at the Forschungszentrum Jülich.
+  
 ## License
 The code is licensed under the [MIT license](./LICENSE).
 
