@@ -46,7 +46,10 @@ or docker-run
 ```
 docker run --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE=false --env DEFAULT_GRAPH=http://localhost:8899/dislockg --publish 1111:1111  --publish  8899:8890 openlink/virtuoso-opensource-7:latest
 ```
-4. Wait for the Virtuoso instance to start up (you can check the logs with `docker-compose logs virtuoso`)
+4. Wait for the Virtuoso instance to start up (you can check the logs with
+   ```
+   docker-compose logs virtuoso
+   ```
 
 ### Uploading the knowledge graph into the triplestore 
 
