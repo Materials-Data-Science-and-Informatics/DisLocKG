@@ -58,7 +58,7 @@ docker run --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE=fal
   (1). on the menu, go to the `Linked Data`.
   (2). Then choose `Quad Store Upload`.
   (3). Choose the downloaded knowledge graph file. 
-   (4). Type the name of graph IRI, `http:localhost:8890?/DisLocKG`, and 
+   (4). Type the name of graph IRI, `http:localhost:8890/DisLocKG`, and 
    (5). Hit the upload.
 NOTE: It may take time, approx. 3-5 minutes to upload.
 ![fig2_dislockg](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/dcc21a0b-caa4-4464-a116-aec9684ce211)
