@@ -12,20 +12,18 @@
  
 
 ## About DisLocKG
-The Dislocation Knowledge Graph (DisLocKG) is a knowledge graph that contains data about a crystalline material’s dislocation organized in a semantic network. 
-In addition, DisLocKG stores also the provenance information related to the data, particularly the creator data, software, and software version used to generate the data. 
-In total, we have generated a number of ∼2.2M triples that are stored as RDF files (as of 01/08/2023).
+DisLocKG is a knowledge graph that presents data regarding dislocation in crystalline materials, arranged in a semantic network. DisLocKG also preserves the provenance information of the data, which includes the creator's data, software used, and software version utilized to produce the data. Currently, we have generated approximately 2.2 million triples that are saved as RDF files as of 01/08/2023.
 ![Fig16.pdf](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/files/12272399/Fig16.pdf)
 
 ## Repository description
-* You can find raw data that DisLocKG maps using the Dislocation Ontology (DISO) [here](/raw-data/modelib-microstructure/Copper/h5/).
+* You can find raw data [here](/raw-data/modelib-microstructure/Copper/h5/).
 * All data files are in the HDF5 format (.h5).
-* To generate the RDF graph from the given [raw data](raw-data), we developed a python [script](/script/modelib/)  using the [RDFLib](https://github.com/RDFLib/rdflib) python library and execute it with `python map_data.py`. 
+* To generate the RDF graph from the given [raw data](raw-data), we developed a python [script](/script/modelib/) using the [RDFLib](https://github.com/RDFLib/rdflib) python library and execute it with `python map_data.py`. 
 * You can find a set of competence questions (CQs) along with SPARQL queries [here](/CQs/CQs_v1_1.md).
     
 ## Getting started with DisLocKG Docker container
-First, you should create and run a [Virtuoso](https://virtuoso.openlinksw.com) Open Source instance including a SPARQL endpoint. 
-To run the DisLocKG Docker container, you'll need to have Docker installed on your machine and then follow the steps below:
+To begin, you must set up and execute a [Virtuoso](https://virtuoso.openlinksw.com) Open Source instance that includes a SPARQL endpoint. 
+If you plan to run the DisLocKG Docker container, ensure that Docker is installed on your device and follow the instructions provided below:
 
 1. Clone the repository
 
@@ -51,7 +49,7 @@ docker run  -d --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE
 
 ## Uploading the knowledge graph into the triplestore 
 
-1. Due to large files in the repository, please download the knowledge graph in [here](https://media.githubusercontent.com/media/Materials-Data-Science-and-Informatics/DisLocKG/main/DisLocKG-01.08.2023.ttl).
+1. First, download the knowledge graph from [here](https://media.githubusercontent.com/media/Materials-Data-Science-and-Informatics/DisLocKG/main/DisLocKG-01.08.2023.ttl).
 2. While the Virtuoso container is running (in the background), go to `localhost:8899/conductor` on your browser. You will see the page as seen in the figure below:
 
 ![menu-conductor](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/ee0c7f66-82ce-46d8-9544-01ee2f612d0e)
@@ -60,12 +58,12 @@ docker run  -d --name DisLocKG --env DBA_PASSWORD=1234567890 --env SPARQL_UPDATE
    
 ![fig1-dislockg](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/2d34cf0c-a2b7-488c-8d92-e32d82fe2e37)
 
-4. If you have successfully logged in,
-  (1). go to the `Linked Data` menu.
-  (2). Then choose `Quad Store Upload`.
-  (3). Choose the `DisLocKG-01.08.2023.ttl` in the repository. 
-   (4). Type the name of graph IRI, `http:localhost:8890/DisLocKG`, and 
-   (5). Hit the upload.
+4. Once you have successfully logged in, follow these steps:
+    1. Navigate to the `Linked Data` menu.
+    2. Select `Quad Store Upload`.
+    3. Locate `DisLocKG-01.08.2023.ttl` in your local machine.
+    4. Enter the name of the graph IRI as `http:localhost:8890/DisLocKG`.
+    5. Click on the upload button.
 
 NOTE: It may take time, approx. 3-5 minutes, to upload the file.
 <img width="1791" alt="fig2-dislockg" src="https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/assets/71790028/73c39788-6720-461c-b50e-112759c7bc5b">
@@ -75,7 +73,7 @@ NOTE: It may take time, approx. 3-5 minutes, to upload the file.
 
 
 ## Querying the graph using the SPARQL endpoint
- * After successfully uploading the knowledge graph, you may query DisLocKG by visiting
+ * Once you have successfully uploaded the knowledge graph, you can access DisLocKG by querying it via the SPARQL endpoint:
    ```
    localhost:8899/sparql
    ```
