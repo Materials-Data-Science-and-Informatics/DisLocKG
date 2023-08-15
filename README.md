@@ -13,7 +13,8 @@
 
 ## About DisLocKG
 DisLocKG is a knowledge graph that presents data regarding dislocation in crystalline materials, arranged in a semantic network. DisLocKG also preserves the provenance information of the data, which includes the creator's data, software used, and software version utilized to produce the data. Currently, we have generated approximately 2.2 million triples that are saved as RDF files as of 01/08/2023.
-![Fig16.pdf](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/files/12272399/Fig16.pdf)
+![Fig16.pdf](https://github.com/Materials-Data-Science-and-Informatics/DisLocKG/files/12343207/Fig16.pdf)
+
 
 ## Repository description
 * You can find raw data [here](/raw-data/modelib-microstructure/Copper/h5/).
